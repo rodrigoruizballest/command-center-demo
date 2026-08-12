@@ -770,6 +770,7 @@
 
   /* boot */
   renderFeed();lineChart($('#cTrend'),trend,{labels:trendLabels});drawn.trend=1;countTiles($('#view-resumen'));
+  (function(){var h=(location.hash||'').replace('#','');if(h&&titles[h]){var b=$('#nav button[data-view="'+h+'"]');if(b)b.click();}})();
   // ambient: occasionally push a live feed item
   if(!reduce){
     var ambient=[
